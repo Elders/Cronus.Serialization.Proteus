@@ -32,11 +32,11 @@ echo Downloading latest version of Nuget.Core...
 echo Downloading latest version of Nyx...
 %NUGET% "install" "Nyx" "-OutputDirectory" "%TOOLS_PATH%" "-ExcludeVersion" "-Prerelease"
 
-SET TARGET="Build"
+SET TARGET="ReleaseLocal"
 
 IF NOT [%1]==[] (set TARGET="%1")
 
-SET SUMMARY="Elders.Cronus.Serialization.Proteus"
-SET DESCRIPTION="Elders.Cronus.Serialization.Proteus"
+SET SUMMARY="Elders.Cronus.Transport.RabbitMQ"
+SET DESCRIPTION="Elders.Cronus.Transport.RabbitMQ"
 
-%FAKE% %NYX% "target=%TARGET%" appName=Elders.Cronus.Serialization.Proteus appType=lib appSummary=%SUMMARY% appDescription=%DESCRIPTION% nugetPackageName=Cronus.Serialization.Proteus
+%FAKE% %NYX% "target=%TARGET%"  appName=Elders.Cronus.Transport.RabbitMQ appType=lib appSummary=%SUMMARY% appDescription=%DESCRIPTION% nugetPackageName=Cronus.Transport.RabbitMQ
