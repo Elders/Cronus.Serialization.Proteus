@@ -1,3 +1,6 @@
+#### 2.0.2 - 06.07.2015
+* Update Proteus and Cronus packages
+
 #### 2.0.1 - 03.07.2015
 * Update Proteus and Cronus packages
 
