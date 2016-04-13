@@ -1,36 +1,14 @@
 #####################
 ## CURRENT PROJECT ##
 #####################
-release.cmd
 
-#
-# Front-end BEGIN
-#
-
-# Misc
-Dox/
-JavaScriptImplicitClient/
-
-# Archives
-*.7z
-*.zip
-*.rar
-
-# Bower
-**/public/js/vendor/**
-
-# NetBeans
-nbproject/
-
-#
-# Front-end END
-#
-
-#Ignore git files
 *.orig
 
-#Ignore MSI artifacts during packaging
-*.wxs
+################
+## Elders.Nyx ##
+################
+release.cmd
+*/**/AssemblyInfo.cs
 
 ##############################################################
 ## Ignore Visual Studio temporary files, build results, and ##
@@ -38,8 +16,8 @@ nbproject/
 ##############################################################
 
 # Ignore most popular binaries in Windows
-*.exe
-*.dll
+.exe
+.dll
 
 # Roslyn stuff
 *.sln.ide
@@ -173,7 +151,7 @@ publish/
 # Publish Web Output
 *.[Pp]ublish.xml
 *.azurePubxml
-# TODO: Comment the next line if you want to checkin your web deploy settings
+# TODO: Comment the next line if you want to checkin your web deploy settings 
 # but database connection strings (with potential passwords) will be unencrypted
 *.pubxml
 *.publishproj
@@ -261,3 +239,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Directories which start with '.'
+**/.*/
